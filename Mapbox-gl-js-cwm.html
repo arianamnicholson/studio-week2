@@ -4,20 +4,18 @@
 <head>
   <title>Studio Week 2</title>
     <!-- Add Mapbox GL JS JavaScript file -->
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <!-- Add in the Mapbox GL JS CSS file -->
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Add styling info for the map -->
     <style>
       body {
-        margin: 0;
-        padding: 0;
+          margin: 0;
+          padding: 0;
       }
       #mapId {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
+        height: 400px;
+        width: 800px;
       }
     </style>
     <!-- Adding styling info for page layout by reading in a CSS file -->
@@ -40,8 +38,8 @@
     <div id="mapId"></div>
     <script>
         // Mapbox GL JS requires a token
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYXJpYW5hbW5pY2hvbHNvbiIsImEiOiJjazVpazFndGUwMXUwM2RuanIzMW9mdGc0In0.TytBJMlpMr_WcTlolgjRtw’;
-        var map = new mapboxgl.Map({
+    mapboxgl.accessToken = "pk.eyJ1IjoiYXJpYW5hbW5pY2hvbHNvbiIsImEiOiJjazVpazFndGUwMXUwM2RuanIzMW9mdGc0In0.TytBJMlpMr_WcTlolgjRtw";
+    var map = new mapboxgl.Map({
             container: 'mapId',
             style: 'mapbox://styles/mapbox/streets-v11',
             center: [-122.420790, 37.754700],
